@@ -7,6 +7,8 @@ def start():
         code = input('password:')
         if code == password:
              mane()
+    elif signing_in_or_making_account == '/skip':
+        mane()
     else:
         binary = input('what is 23 in binary:')
         if binary == '11101':

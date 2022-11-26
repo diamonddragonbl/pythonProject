@@ -12,6 +12,7 @@ def divide(a, b):
     return a / b
 
 def play_add():
+    print('============================')
     a = int(input("Enter first number:"))
     b = int(input("Enter second number:"))
 
@@ -20,6 +21,7 @@ def play_add():
     print(f"{a} plus {b} is {sum}")
 
 def play_subtract():
+    print('============================')
     a = int(input("Enter first number:"))
     b = int(input("Enter second number:"))
 
@@ -28,6 +30,7 @@ def play_subtract():
     print(f"{a} minus {b} is {sum}")
 
 def play_multiply():
+    print('============================')
     a = int(input("Enter first number:"))
     b = int(input("Enter second number:"))
 
@@ -36,8 +39,15 @@ def play_multiply():
     print(f"{a} times {b} is {sum}")
 
 def play_divide():
-    a = int(input("Enter first number:"))
-    b = int(input("Enter second number:"))
+    print('============================')
+    a = input("Enter first number:")
+    b = input("Enter second number:")
+
+#    if a.isnumeric():
+#        print('what do to')
+#    else:
+#        print('You must enter only numbers.')
+#        a = input("Enter first number:")
 
     sum = divide(a, b)
 
@@ -46,7 +56,7 @@ def play_divide():
 def calculator_run():
     while True:
         answer = input("do you want to add, subtract, divide or multiply?:")
-        if answer == 'add':
+        if answer == 'add' or answer == 'a':
             play_add()
         elif answer == 'subtract' or answer == 's':
             play_subtract()
