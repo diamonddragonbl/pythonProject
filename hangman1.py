@@ -75,8 +75,8 @@ def main():
 
    if input("do you want to play Hangman again? y/n:") == 'n':
        print("thanks for playing Hangman")
-       import home
-       home.mane()
+       import homey
+       homey.mane()
 
 if __name__ == "__main__":
    main()
