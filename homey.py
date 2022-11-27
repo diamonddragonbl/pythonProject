@@ -30,6 +30,12 @@ def mane_again():
         mane_again()
 
 def mane():
+    print('        __________________')
+    print('        |                |')
+    print('        |                |')
+    print('        |                |')
+    print('        |                |')
+    print('=========                =========')
     print(f'welcome to the home page. we have {app_number} apps')
 
     answer = input('do you want to play Hangman or use a calculator:')

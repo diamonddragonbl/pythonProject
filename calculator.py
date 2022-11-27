@@ -43,12 +43,6 @@ def play_divide():
     a = input("Enter first number:")
     b = input("Enter second number:")
 
-#    if a.isnumeric():
-#        print('what do to')
-#    else:
-#        print('You must enter only numbers.')
-#        a = input("Enter first number:")
-
     sum = divide(a, b)
 
     print(f"{a} divided by {b} is {sum}")
