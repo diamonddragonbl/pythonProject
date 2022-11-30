@@ -1,3 +1,4 @@
+import settings
 def number_only(input):
     try:
         # Convert it into integer
@@ -85,6 +86,7 @@ def calculator_run():
         elif answer == 'stop':
             print("thanks for using Ben's calculator")
             import homey
+            settings.answer_home_screen = 'wand'
             homey.mane('x')
         else:
             print ('what are you doing? stop breaking my calculator!')
