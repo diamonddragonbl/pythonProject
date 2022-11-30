@@ -77,7 +77,7 @@ def main():
        print("thanks for playing Hangman")
        print('============================')
        import homey
-       homey.mane()
+       homey.mane('x')
    else:
        main()
 

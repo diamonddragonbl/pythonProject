@@ -1,3 +1,10 @@
+def number_only(input):
+    try:
+        # Convert it into integer
+        val = int(input)
+    except ValueError:
+        print("No.. input is not a number. Start over.")
+        calculator_run()
 
 def adding(a, b):
     return a + b
@@ -13,42 +20,59 @@ def divide(a, b):
 
 def play_add():
     print('============================')
-    a = int(input("Enter first number:"))
-    b = int(input("Enter second number:"))
+    a = str(input("Enter first number:"))
+    number_only(a)
+    a_int = int(a)
+    b = str(input("Enter second number:"))
+    number_only(b)
+    b_int = int(b)
 
-    sum = adding(a, b)
+    sum = adding(a_int, b_int)
 
     print(f"{a} plus {b} is {sum}")
 
 def play_subtract():
     print('============================')
-    a = int(input("Enter first number:"))
-    b = int(input("Enter second number:"))
+    a = str(input("Enter first number:"))
+    number_only(a)
+    a_int = int(a)
+    b = str(input("Enter second number:"))
+    number_only(b)
+    b_int = int(b)
 
-    sum = subtracting(a, b)
+    sum = subtracting(a_int, b_int)
 
-    print(f"{a} minus {b} is {sum}")
+    print(f"{a} plus {b} is {sum}")
 
 def play_multiply():
     print('============================')
-    a = int(input("Enter first number:"))
-    b = int(input("Enter second number:"))
+    a = str(input("Enter first number:"))
+    number_only(a)
+    a_int = int(a)
+    b = str(input("Enter second number:"))
+    number_only(b)
+    b_int = int(b)
 
-    sum = multiply(a, b)
+    sum = multiply(a_int, b_int)
 
-    print(f"{a} times {b} is {sum}")
+    print(f"{a} plus {b} is {sum}")
 
 def play_divide():
     print('============================')
-    a = input("Enter first number:")
-    b = input("Enter second number:")
+    a = str(input("Enter first number:"))
+    number_only(a)
+    a_int = int(a)
+    b = str(input("Enter second number:"))
+    number_only(b)
+    b_int = int(b)
 
-    sum = divide(a, b)
+    sum = divide(a_int, b_int)
 
-    print(f"{a} divided by {b} is {sum}")
+    print(f"{a} plus {b} is {sum}")
 
 def calculator_run():
     while True:
+        print('============================')
         answer = input("do you want to add, subtract, divide or multiply?:")
         if answer == 'add' or answer == 'a':
             play_add()
@@ -61,13 +85,13 @@ def calculator_run():
         elif answer == 'stop':
             print("thanks for using Ben's calculator")
             import homey
-            homey.mane()
+            homey.mane('x')
         else:
             print ('what are you doing? stop breaking my calculator!')
         if input("do you want to do math again? y/n:") == 'n':
             print("thanks for using Ben's calculator")
             import homey
-            homey.mane()
+            homey.mane('x')
 
 if __name__ == "__main__":
    calculator_run()
