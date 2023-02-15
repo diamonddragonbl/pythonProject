@@ -13,8 +13,10 @@ db = '  '
 dd = '  '
 
 def x():
-    if roundcount == 1
+    if roundcount == 1:
         a = input('what spas')
+    elif roundcount == 2:
+        b = input('what spas')
 
 def printstatis():
     print('' + aa + ' | ' + ab + ' | ' + ad)
