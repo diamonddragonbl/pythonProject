@@ -1,4 +1,3 @@
-
 import random
 
 def rand_word():

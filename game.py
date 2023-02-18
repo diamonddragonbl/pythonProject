@@ -12,18 +12,19 @@ da = '  '
 db = '  '
 dd = '  '
 
-def x():
+def x(x, y):
     if roundcount == 1:
         a = input('what spas')
     elif roundcount == 2:
-        b = input('what spas')
+        b = input('what spase a,b or c:')
 
 def printstatis():
-    print('' + aa + ' | ' + ab + ' | ' + ad)
-    print('-------------')
-    print(ba + ' | ' + bb + ' | ' + bd)
-    print('-------------')
-    print(da + ' | ' + db + ' | ' + dd)
+    print('  a    b   c')
+    print('1' + aa + ' | ' + ab + ' | ' + ad)
+    print(' ' + '-------------')
+    print('2' + ba + ' | ' + bb + ' | ' + bd)
+    print(' ' + '-------------')
+    print('3' + da + ' | ' + db + ' | ' + dd)
 
 
 
