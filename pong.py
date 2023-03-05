@@ -1,5 +1,5 @@
 import turtle
-import winsound
+#import winsound
 
 t = turtle
 
@@ -90,7 +90,7 @@ class Main_game_loop:
         if c_ball.ball.ycor() > 290:
             c_ball.ball.sety(290)
             c_ball.dy *= -1
-            winsound.PlaySound("pingpond-MadeWithClipchamp.wav", winsound.SND_ASYNC)
+            #winsound.PlaySound("file name", winsound.SND_ASYNC)
 
         if c_ball.ball.ycor() < -290:
             c_ball.ball.sety(-290)
