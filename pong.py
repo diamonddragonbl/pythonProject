@@ -1,5 +1,4 @@
 import turtle
-#import winsound
 
 t = turtle
 
@@ -86,11 +85,10 @@ class Main_game_loop:
         c_ball.ball.setx(c_ball.ball.xcor() + c_ball.dx)
         c_ball.ball.sety(c_ball.ball.ycor() + c_ball.dy)
 
-        #border
+#        border
         if c_ball.ball.ycor() > 290:
             c_ball.ball.sety(290)
             c_ball.dy *= -1
-            #winsound.PlaySound("file name", winsound.SND_ASYNC)
 
         if c_ball.ball.ycor() < -290:
             c_ball.ball.sety(-290)
